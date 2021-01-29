@@ -25,7 +25,8 @@ namespace HousePlants.Controllers
             //iterrate list of plants be creating new plant model and adding it to the list of plants
             //
             var pothos = new Plant("Pothos", "/sun-icons/all.png", "/plant-images/pothos.PNG", "water daily", "fertilize sometimes");
-            var peperomia = new Plant("Peperomina", "/sun-icons/low-medium.png", "/plant-images/peperomia.PNG", "water daily", "fertilize sometimes");
+            var peperomia = new Plant("Peperomina", "/sun-icons/low-med.png", "/plant-images/peperomia.PNG", "water daily", "fertilize sometimes");
+
 
 
             var model = new IndexViewModel();

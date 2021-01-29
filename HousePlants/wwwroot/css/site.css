@@ -1,5 +1,7 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿:root {
+    --background: rgb(255, 250, 242);
+    --page-border: rgb(255, 219, 161);
+}
 
 a.navbar-brand {
   white-space: normal;
@@ -27,19 +29,33 @@ a {
 /*
     My Code --------------------------------------------*/
 
-.container {
+body {
     max-width: 100%;
+    margin: 0px;
+    background-color: var(--background);
 }
 
 #owned {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, 400px);
+    column-gap: 30px;
+    
 }
 
+.plant{
+    justify-items: center;
+    border-style: double;
+    padding: 10px;
+    background-color: white;
+}
 .plant-header {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
+}
+.plant-info {
+    display: grid;
+    justify-items: center;
 }
 
 
@@ -48,5 +64,46 @@ a {
 }
 
 .sun {
-    width: 60%;
+ width: 100%;
+    display: flex;
+    justify-self: start;
+}
+
+
+/*Page Border--------------------------------------------*/
+
+#left {
+    background: var(--page-border);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    left: 0;
+}
+
+#right {
+    background: var(--page-border);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    right: 0;
+}
+
+#top {
+    background: var(--page-border);
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 15px;
+    top: 0;
+}
+
+#bottom {
+    background: var(--page-border);
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 15px;
+    bottom: 0;
 }
