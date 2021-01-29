@@ -24,8 +24,9 @@ namespace HousePlants.Controllers
             //get list of plants from database
             //iterrate list of plants be creating new plant model and adding it to the list of plants
             //
-            var pothos = new Plant("Pothos", "/sun-icons/all.png", "/plant-images/pothos.PNG", "water daily", "fertilize sometimes");
-            var peperomia = new Plant("Peperomina", "/sun-icons/low-med.png", "/plant-images/peperomia.PNG", "water daily", "fertilize sometimes");
+            var pothos = new Plant("Pothos", "/sun-icons/any.png", "/plant-images/pothos.PNG", "Moderately Dry", "Poisonous");
+            var peperomia = new Plant("Peperomina", "/sun-icons/low-medium.png", "/plant-images/peperomia.PNG", "Allow soil to dry", "Poisonous");
+            var chineseEvergreen = new Plant("Chinese Evergreen", "/sun-icons/low-medium.png", "/plant-images/chinese-evergreen.PNG", "Keep Evenly Moist", "Poisonous");
 
 
 
@@ -33,6 +34,7 @@ namespace HousePlants.Controllers
 
             model.plantList.Add(pothos);
             model.plantList.Add(peperomia);
+            model.plantList.Add(chineseEvergreen);
             return View(model);
         }
 

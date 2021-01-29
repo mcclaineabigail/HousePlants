@@ -1,57 +1,54 @@
-﻿:root {
+﻿@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
     --background: rgb(255, 250, 242);
-    --page-border: rgb(255, 219, 161);
+    --page-border: rgb(94, 113, 143);
+    --dark-border: rgb(55, 67, 87);
+    --card-color: rgb(123, 145, 179);
+}
+.container{
+
 }
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+header {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    border-style: double;
+    padding: 10px;
+    background-color: var(--card-color);
+    box-shadow: -5px 5px #888888;
 }
-
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-/*
-    My Code --------------------------------------------*/
-
 body {
     max-width: 100%;
     margin: 0px;
     background-color: var(--background);
+    font-family: 'Courgette', cursive;
+    color: antiquewhite;
 }
 
 #owned {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 400px);
-    column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 50px;
+    justify-content: center;
     
 }
 
-.plant{
+.plant {
     justify-items: center;
     border-style: double;
     padding: 10px;
-    background-color: white;
+    
+    background-color: var(--card-color);
+    box-shadow: -5px 5px var(--page-border);
 }
 .plant-header {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 7fr 4fr;
     align-items: center;
+    height: 25%;
+    
 }
 .plant-info {
     display: grid;
@@ -61,6 +58,7 @@ body {
 
 .image {
     width: 80%;
+    border: 5px dotted var(--dark-border);
 }
 
 .sun {
