@@ -1,28 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
+using System;
+using System.ComponentModel.DataAnnotations;
+using HousePlants.Data;
 
 namespace HousePlants.Models
 {
-    public class Plant
+    public class Plant : IEntity
     {
 
-        public long id { get; set; }
-        public string name { get; set; }
-        public string sun { get; set; }
-        public string image { get; set; }
-        public string water { get; set; }
-        public string fertilize { get; set; }
+        public int Id { get; set; }
 
 
-        public Plant(string name, string sun, string image, string water, string fertilize)
+        [Required] 
+        public string Name { get; set; }
+        [Required] 
+        public string Sun { get; set; }
+        [Required]
+        public string Image { get; set; }
+        [Required]
+        public string Water { get; set; }
+        [Required]
+        public string Notes { get; set; }
+
+
+        public Plant(string name, string sun, string image, string water, string Notes)
         {
-            this.name = name;
-            this.sun = sun;
-            this.image = image;
-            this.water = water;
-            this.fertilize = fertilize;
+            this.Name = name;
+            this.Sun = sun;
+            this.Image = image;
+            this.Water = water;
+            this.Notes = Notes;
         }
     }
 }
