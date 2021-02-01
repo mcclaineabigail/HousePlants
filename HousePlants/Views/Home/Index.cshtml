@@ -19,12 +19,24 @@
                     <aside class="plant-info">
                         <img src="@plant.Image" alt="plant photo" class="image">
                         <p class="water-frequency">💧 @plant.Water 💧</p>
-                        <p class="fertilize">∴ @plant.Fertilize ∴</p>
+                        <p class="fertilize">∴ @plant.Notes ∴</p>
                     </aside>
                 </div>
             }
         </section>
-        <section class="section wanted"></section>
+        <section class="section wanted">
+            <div class="dropdown">
+                <button class="dropbtn">Select New Plant</button>
+                <div class="dropdown-content">
+                    <p class="choose-plant">Plant 1</p>
+                    <p class="choose-plant">Plant 2</p>
+                    <p class="choose-plant">Plant 3</p>
+                    <p class="choose-plant">Plant 4</p>
+                    <p class="choose-plant">Plant 5</p>
+                </div>
+            </div>
+            <button id="submit"><img src="./plant-images/add.png" id="add" alt="Add Plant"></button>
+        </section>
 
 
         <div id="left"></div>

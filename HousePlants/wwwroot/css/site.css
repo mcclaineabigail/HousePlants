@@ -2,6 +2,7 @@
 
 :root {
     --background: rgb(255, 250, 242);
+    --dark-background: rgb(227, 216, 197);
     --page-border: rgb(94, 113, 143);
     --dark-border: rgb(55, 67, 87);
     --card-color: rgb(123, 145, 179);
@@ -24,7 +25,8 @@ body {
     margin: 0px;
     background-color: var(--background);
     font-family: 'Courgette', cursive;
-    color: antiquewhite;
+    /*color: antiquewhite;*/
+    color: red;
 }
 
 #owned {
@@ -104,4 +106,57 @@ body {
     right: 0;
     height: 15px;
     bottom: 0;
+}
+
+/*Add Plant--------------------------------*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+   padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+ }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn, #submit:hover {
+    background-color: #3e8e41;
+}
+
+#add {
+    width: 40px;
+}
+
+#submit {
+    background-color: #4CAF50; /* Green */
+    border: none;
 }
