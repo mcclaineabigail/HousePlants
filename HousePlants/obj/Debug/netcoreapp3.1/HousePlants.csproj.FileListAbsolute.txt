@@ -167,3 +167,9 @@ C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\r
 C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Types.dll
+C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\amcclain\source\repos\HousePlants\HousePlants\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\amcclain\source\repos\HousePlants\HousePlants\obj\Debug\netcoreapp3.1\HousePlants.Properties.Resources.resources
+C:\Users\amcclain\source\repos\HousePlants\HousePlants\obj\Debug\netcoreapp3.1\HousePlants.csproj.GenerateResource.cache

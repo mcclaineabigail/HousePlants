@@ -9,6 +9,6 @@ namespace HousePlants.Data.EFCore
         {
 
         }
-        // We can add new methods specific to the movie repository here in the future
+        // We can add new methods specific to the plant repository here in the future
     }
 }

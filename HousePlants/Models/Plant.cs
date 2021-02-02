@@ -11,25 +11,25 @@ namespace HousePlants.Models
         public int Id { get; set; }
 
 
-        [Required] 
+        //[Required] 
         public string Name { get; set; }
-        [Required] 
+        //[Required] 
         public string Sun { get; set; }
-        [Required]
+        //[Required]
         public string Image { get; set; }
-        [Required]
+        //[Required]
         public string Water { get; set; }
-        [Required]
+        //[Required]
         public string Notes { get; set; }
 
 
-        public Plant(string name, string sun, string image, string water, string Notes)
-        {
-            this.Name = name;
-            this.Sun = sun;
-            this.Image = image;
-            this.Water = water;
-            this.Notes = Notes;
-        }
+        //public Plant(string name, string sun, string image, string water, string Notes)
+        //{
+        //    this.Name = name;
+        //    this.Sun = sun;
+        //    this.Image = image;
+        //    this.Water = water;
+        //    this.Notes = Notes;
+        //}
     }
 }
