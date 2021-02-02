@@ -5,83 +5,41 @@
           ,"Sun"
           ,"Image"
           ,"Water"
-          ,"Fertilize"};
+          ,"Notes"};
 }
-
-
-
-
 
 <header><h1>House Plant Catalog</h1></header>
 <div class="body">
-    @*<section id="owned">
-        @foreach (var plant in Model.plantList)
-        {
-            <div class="plant">
-                <aside class="plant-header">
-                    <h2 class="plant-name">@plant.Name</h2>
-                    <img class="sun" src="@plant.Sun" alt="sun need" />
-                </aside>
-                <aside class="plant-info">
-                    <img src="@plant.Image" alt="plant photo" class="image">
-                    <p class="water-frequency">💧 @plant.Water 💧</p>
-                    <p class="fertilize">∴ @plant.Notes ∴</p>
-                </aside>
-            </div>
-        }
-    </section>*@
+    <section id="owned">
+            @foreach (var plant in Model)
+            {
+                <div class="plant">
+                    <aside class="plant-header">
+                        <h2 class="plant-name">@plant.Name</h2>
+                        <img class="sun" src="@plant.Sun" alt="sun need" />
+                    </aside>
+                    <aside class="plant-info">
+                        <img src="@plant.Image" alt="plant photo" class="image">
+                        <p class="water-frequency">💧 @plant.Water 💧</p>
+                        <p class="fertilize">∴ @plant.Notes ∴</p>
+                    </aside>
+                </div>
+            }
+        </section>
     <section class="wanted">
         <div class="dropdown">
 
-            @*<select id="dropdown" size="1" placeholder="Select New Plant">
+            <select id="dropdown" size="1" placeholder="Select New Plant">
                 <option class="choose-plant" value="" disabled selected>Select New Plant</option>
-                @foreach (var plant in Model.plantList)
+                @foreach (var Data in Model)
                 {
-                    <option class="choose-plant">@plant.Name</option>
+                    <option class="choose-plant">@Data.Name</option>
                 }
 
-            </select>*@
+            </select>
         </div>
         <button id="submit"><img src="./plant-images/add.png" id="add" alt="Add Plant"></button>
     </section>
-
-    <table>
-        <thead>
-            <tr>
-                @{
-                    foreach (var head in TableHeaders)
-                    {
-                        <th>
-                            @head
-                        </th>
-                    }
-                }
-            </tr>
-        </thead>
-
-        <tbody>
-            @{
-                if (Model != null)
-                {
-                    foreach (var Data in Model)
-                    {
-                        <tr>
-                            <td>@Data.Id</td>
-                            <td>@Data.Name</td>
-                            <td>@Data.Sun</td>
-                            <td>@Data.Image</td>
-                            <td>@Data.Water</td>
-                            <td>@Data.Notes</td>
-                        </tr>
-                    }
-                }
-            }
-            <tr>
-                <td>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 
 
     <div class="border" id="left"></div>

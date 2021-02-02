@@ -16,6 +16,7 @@ namespace HousePlants.Controllers
         SqlDataReader dr;
         SqlConnection con = new SqlConnection();
         List<Plant> plantList = new List<Plant>();
+        List<Plant> plantList1 = new List<Plant>();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -54,7 +55,7 @@ namespace HousePlants.Controllers
             {
                 con.Open();
                 com.Connection = con;
-                com.CommandText = "SELECT TOP (1000) [Id],[Name],[Sun],[Image],[Water],[Fertilize] FROM [HousePlantsContext-fb9b44fa-b0fc-440f-b7b6-5a4ef1bb13f7].[dbo].[Plant]";
+                com.CommandText = "SELECT TOP (1000) [Id],[Name],[Sun],[Image],[Water],[Notes] FROM [HousePlantsContext-fb9b44fa-b0fc-440f-b7b6-5a4ef1bb13f7].[dbo].[Plant]";
                 dr = com.ExecuteReader();
                 
                 while (dr.Read())
@@ -64,7 +65,7 @@ namespace HousePlants.Controllers
                         , Sun = dr["Sun"].ToString()
                         , Image = dr["Image"].ToString()
                         , Water = dr["Water"].ToString()
-                        , Notes = dr["Fertilize"].ToString()
+                        , Notes = dr["Notes"].ToString()
 
                     });
                 }
